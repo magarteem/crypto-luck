@@ -1,0 +1,2 @@
+export { FloatingParticles } from './FloatingParticles';
+

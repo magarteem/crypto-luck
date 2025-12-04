@@ -1,0 +1,62 @@
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+}
+
+.logoIcon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--color-accent-orange), var(--color-accent-red));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 
+    0 0 25px var(--color-accent-glow),
+    0 0 15px var(--color-accent-glow-strong),
+    inset 0 0 10px rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 
+      0 0 40px var(--color-accent-glow),
+      0 0 25px var(--color-accent-glow-strong),
+      inset 0 0 15px rgba(255, 255, 255, 0.15);
+  }
+}
+
+.logoSymbol {
+  color: var(--color-bg-primary);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1;
+}
+
+.logoText {
+  font-size: 24px;
+  font-weight: 700;
+  background: linear-gradient(135deg, var(--color-accent-orange), var(--color-accent-red));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: -0.5px;
+}
+
+@media (max-width: 768px) {
+  .logoIcon {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .logoSymbol {
+    font-size: 20px;
+  }
+  
+  .logoText {
+    font-size: 20px;
+  }
+}
+

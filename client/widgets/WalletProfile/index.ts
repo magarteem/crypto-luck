@@ -1,0 +1,2 @@
+export { WalletProfile } from './WalletProfile';
+
